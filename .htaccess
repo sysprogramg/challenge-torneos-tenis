@@ -1,0 +1,4 @@
+RewriteEngine on
+
+RewriteRule ^slam/(.+)/top/([0-9]+)/sid/(.+)$ http://localhost:8080/nodus/assets/includes/dispatcher.php?accion=GetTourneyBySlug&tourney_slug=$1&top=$2&sid=$3
+RewriteRule ^slam/(.+)/player/(.+)/sid/(.+)$ http://localhost:8080/nodus/assets/includes/dispatcher.php?accion=GetTilesTourneyByPlayerSlug&tourney_slug=$1&player_slug=$2&sid=$3

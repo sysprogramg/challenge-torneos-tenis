@@ -1,0 +1,53 @@
+.card-header button {
+    top: 0.5rem;
+    right: 1rem;
+}
+
+.card-body {
+    max-height: 323px;
+    overflow: auto;
+}
+
+.card-body select {
+    width: 100px;
+}
+
+.titles {
+    height: 85.1%;
+    max-height: 322px;
+    right: 0;
+    width: 0%;
+    background-color: #f8f9fa;
+    top: 15%;
+    z-index: 2;
+    border-bottom-right-radius: .25rem;
+    overflow: auto;
+    -webkit-transition: width 0.6s ease-in-out;
+    transition: width 0.6s ease-in-out;
+}
+
+.titles.full {
+    width: 305px;
+}
+
+.titles>ul {
+    overflow: auto;
+    width: 100%;
+    padding: 1rem;
+}
+
+.cover {
+    display: none;
+    background: url("../images/loader.gif") no-repeat scroll center center #FFF;
+    background-size: contain;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    opacity: 0.8;
+    z-index: 999;
+}
+
+.cover.show {
+    display: block;
+}
